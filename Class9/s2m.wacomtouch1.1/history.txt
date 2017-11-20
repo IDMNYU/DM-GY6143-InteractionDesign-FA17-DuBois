@@ -1,0 +1,15 @@
+
+ 
+v1.1 (june 2014):
+
+    - the former 0-1 mode has been renamed 'logical' and a new '0-1' mode has been added, 
+      which will allways give 0-1 coordinates, even on screen tablets.
+
+    - fixed a finger index issue and replaced the abstraction 'recycleFingersIDs.maxpat'
+      by the javascript 's2m.recycleFingersIDs.js'
+
+v1 : first release, with 64b support.
+ 
+beta 4 :
+    workaround for a wacom driver issue : when a finger was added to a tablet,
+    its addition was reported several time. we now filter that.
