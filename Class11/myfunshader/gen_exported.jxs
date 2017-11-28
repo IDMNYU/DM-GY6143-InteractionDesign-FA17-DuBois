@@ -1,0 +1,22 @@
+<jittershader name="jit.gen.jxs">
+	<description>
+		code generated JXS file
+	</description>
+ 
+	
+	<param name="x" type="float" default="16.0"  />
+	<param name="eclipse" type="float" default="1.0"  />
+	<param name="y" type="float" default="16.0"  />
+	<param name="dry" type="float" default="1.0"  />
+	
+	<language name="glsl" version="1.0">
+		
+		<bind param="x" program="fp" />
+		<bind param="eclipse" program="fp" />
+		<bind param="y" program="fp" />
+		<bind param="dry" program="fp" />
+		
+		<program name="vp" type="vertex" source="gen_exported.vp.glsl" />
+		<program name="fp" type="fragment" source="gen_exported.fp.glsl" />
+	</language>
+</jittershader>
